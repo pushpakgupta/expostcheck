@@ -1,0 +1,28 @@
+{
+  "name": "subhmantoy",
+  "version": "1.0.0",
+  "main": "web/index.js",
+  "license": "UNLICENSED",
+  "proxy": "https://hit-huntington-atm-owen.trycloudflare.com",
+  "scripts": {
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
+  },
+  "dependencies": {
+    "@shopify/app": "3.47.5",
+    "@shopify/cli": "3.47.5",
+    "http-proxy-middleware": "^2.0.6",
+    "react": "^18.2.0"
+  },
+  "author": "Pushpak",
+  "private": true,
+  "workspaces": [
+    "web",
+    "web/frontend",
+    "extensions/*"
+  ]
+}
